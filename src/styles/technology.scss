@@ -1,0 +1,65 @@
+@import "./variables.scss";
+@import "./common_components.scss";
+
+.technology {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 574px;
+  & div:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__subtitle {
+    @extend %subtitle-template;
+    margin-bottom: 30px;
+    &--margin {
+      margin-bottom: 70px;
+    }
+  }
+  &__title {
+    @extend %title-template;
+    color: white;
+    @extend %title-h3;
+    width: 31vw;
+  }
+  &__box {
+    position: absolute;
+    top: 150px;
+    left: 210px;
+    width: 45vw;
+  }
+  &__wrapper {
+    overflow: hidden;
+    height: 574px;
+  }
+  &__container {
+    padding-top: 50px;
+    padding-left: 50px;
+    position: relative;
+    height: 445px;
+    &--after {
+      position: relative;
+      &::after {
+        content: "";
+        height: 445px;
+        width: 1px;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+  &__preparation {
+    background-color: #0536fc;
+    position: relative;
+  }
+  &__text--width {
+    width: 13vw;
+  }
+}

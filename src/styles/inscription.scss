@@ -1,0 +1,28 @@
+@import "./variables.scss";
+@import "./common_components.scss";
+
+.inscription {
+  display: flex;
+  position: relative;
+  padding: 150px 100px 150px 113px;
+  &__title {
+    @extend %title-template;
+    @extend %title-h1;
+  }
+  & .nav--font {
+    position: absolute;
+    right: 242px;
+    bottom: 160px;
+  }
+  &__arrow {
+    position: absolute;
+    right: 35px;
+    bottom: 163px;
+  }
+}
+.dash {
+  position: relative;
+  bottom: 19px;
+  width: 210px;
+  height: 7px;
+}

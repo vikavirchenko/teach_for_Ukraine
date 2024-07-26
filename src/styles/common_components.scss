@@ -1,0 +1,158 @@
+@import "./variables.scss";
+
+// --------------------------------subtitle
+%subtitle-template {
+  font-family: $font-Basis;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #0536fc;
+  opacity: 0.9;
+  text-transform: uppercase;
+}
+.subtitle--black {
+  color: black;
+}
+.subtitle--white {
+  color: white;
+}
+// -----------------------------------title
+%title-template {
+  font-family: $font-Basis;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-align: left;
+  text-transform: uppercase;
+}
+%title-h1 {
+  font-size: 71px;
+  line-height: 75px;
+}
+%title-h2 {
+  font-size: 57px;
+  line-height: 59px;
+}
+%title-h3 {
+  font-size: 38px;
+  line-height: 42px;
+}
+%title-h4 {
+  font-size: 36px;
+  line-height: 45px;
+}
+// ---------------------------------text
+.text {
+  font-family: $font-Basis;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  opacity: 0.6;
+}
+.text--white {
+  color: #fff;
+}
+// -------------------------------------btn
+.btn {
+  width: 213px;
+  height: 55px;
+  background: #0536fc;
+  border: none;
+  color: #fff;
+  font-family: $font-Basis;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 0.5s;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  line-height: 55px;
+
+  &:hover {
+    background: #8194e2;
+  }
+}
+// ----------------------------------square
+.square {
+  position: relative;
+  &::before {
+    position: absolute;
+    display: block;
+    top: 36px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    background: white;
+    content: "";
+    transform: rotate(45deg);
+  }
+
+  &.square--blue {
+    &::before {
+      background: rgba(5, 54, 252, 1);
+    }
+  }
+}
+// ------------------------------------------number
+.number {
+  font-family: $font-Basis;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 30px;
+  display: block;
+  &--white {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+// -------------------------------------------arrow
+.arrow-wrapper {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.arrow-link {
+  position: absolute;
+  right: 35px;
+  bottom: 35px;
+}
+// -------------------------------------------big number
+
+.big-number {
+  font-family: $font-Basis;
+  font-size: 100px;
+  font-weight: 500;
+  line-height: 100px;
+  letter-spacing: -0.03em;
+}
+.big-number--margin {
+  margin-left: 35px;
+}
+
+// ----------------------------------------лапки "
+.quotes {
+  font-family: $font-Basis;
+  font-size: 162px;
+  font-weight: 700;
+  line-height: 162px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #ff8201;
+  margin-right: 35px;
+}

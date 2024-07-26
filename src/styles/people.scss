@@ -1,0 +1,62 @@
+@import "./common_components.scss";
+@import "./variables.scss";
+
+.people {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 445px);
+  div:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  &__people {
+    margin: 150px 80px 116px 210px;
+    display: grid;
+  }
+  &__title {
+    @extend %title-template;
+    &--h3 {
+      @extend %title-h3;
+      margin-bottom: 116px;
+    }
+  }
+  &__subtitle {
+    @extend %subtitle-template;
+    margin-bottom: 30px;
+    &--margin {
+      margin-bottom: 211px;
+    }
+  }
+  &__text--width {
+    width: 12vw;
+  }
+  &__img1 {
+    background-image: url(../images/people-top.png);
+  }
+  &__img2 {
+    background-image: url(../images/people-left.png);
+  }
+  &__img3 {
+    background-image: url(../images/people-right.png);
+  }
+  &__img--style {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__participants {
+    background-color: #0536fc;
+    position: relative;
+  }
+  &__school {
+    padding: 94px 125px 36px 50px;
+    position: relative;
+  }
+  &-container {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 36px;
+  }
+  &__partners {
+    position: relative;
+  }
+}

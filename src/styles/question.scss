@@ -1,0 +1,93 @@
+@import "./variables.scss";
+@import "./common_components.scss";
+
+.question {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 78px;
+  padding-bottom: 150px;
+  & div:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  &__subtitle {
+    @extend %subtitle-template;
+    margin-bottom: 30px;
+    position: relative;
+    line-height: 24px;
+  }
+  &__title {
+    @extend %title-template;
+    &--h3 {
+      line-height: 40px;
+      font-size: 36px;
+      margin-bottom: 70px;
+      width: 33vw;
+    }
+  }
+  &__left {
+    padding-top: 150px;
+    padding-left: 210px;
+  }
+  &__right {
+    & label {
+      display: block;
+      margin-bottom: 70px;
+    }
+    &-advantages {
+      padding-top: 30px;
+      &-info {
+        display: none;
+        margin-bottom: 70px;
+      }
+    }
+  }
+  &__text--width {
+    width: 27vw;
+  }
+  &-input {
+    display: none;
+  }
+  &-input:checked ~ .question__right-advantages-info {
+    display: block;
+  }
+  &-input:checked ~ .question__subtitle--after::before {
+    display: none;
+  }
+  &-input:checked ~ .question__subtitle--after::after {
+    border: 1px solid black;
+  }
+}
+.advantages__wrapper::before {
+  content: "";
+  display: block;
+  background: rgba(0, 0, 0, 0.15);
+  width: 456px;
+  height: 1px;
+}
+.advantages__wrapper {
+  width: fit-content;
+}
+.question__subtitle--after::before {
+  content: "";
+  border: 1px solid rgba(5, 54, 252, 1);
+  width: 1.4px;
+  height: 15px;
+  position: absolute;
+  right: 6.5px;
+  top: 3.5px;
+  cursor: pointer;
+}
+.question__subtitle--after::after {
+  content: "";
+  border: 1px solid rgba(5, 54, 252, 1);
+  width: 15px;
+  height: 1.4px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  cursor: pointer;
+}
+.question__subtitle--after {
+  cursor: pointer;
+}

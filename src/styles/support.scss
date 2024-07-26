@@ -1,0 +1,47 @@
+@import "./variables.scss";
+@import "./common_components.scss";
+
+.support {
+  padding: 150px 214px 264px 210px;
+  &__subtitle {
+    @extend %subtitle-template;
+    margin-bottom: 20px;
+    position: relative;
+    line-height: 24px;
+    &--margin {
+      margin-bottom: 70px;
+    }
+  }
+  &__title {
+    @extend %title-template;
+    &--h3 {
+      line-height: 40px;
+      font-size: 36px;
+      margin-bottom: 70px;
+      width: 36vw;
+    }
+  }
+  &__text--width {
+    width: 21vw;
+    margin-bottom: 100px;
+  }
+  &__btn {
+    margin-top: 50px;
+  }
+}
+.form input {
+  outline: unset;
+  border: unset;
+  padding: 0;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 100px;
+  row-gap: 50px;
+}
+.personal-data {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}

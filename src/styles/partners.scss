@@ -1,0 +1,80 @@
+@import "./variables.scss";
+@import "./common_components.scss";
+
+.partners {
+  & .nav__logo-text {
+    width: 17vw;
+    padding-bottom: 100px;
+  }
+  &__top {
+    padding-left: 210px;
+  }
+  &__bottom {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    & div:nth-child(3)::after {
+      content: "";
+      height: 453px;
+      width: 1px;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    &-container {
+      width: 25%;
+      position: relative;
+      padding-left: 50px;
+      & .nav__logo-text {
+        color: rgba(255, 255, 255, 1);
+        opacity: 0.6;
+      }
+    }
+    & div:nth-child(2) {
+      background-color: #0536fc;
+    }
+  }
+  &__subtitle {
+    @extend %subtitle-template;
+    margin-bottom: 30px;
+    position: relative;
+    line-height: 24px;
+    &--margin {
+      margin-bottom: 70px;
+    }
+  }
+  &__title {
+    @extend %title-template;
+    &--h3 {
+      line-height: 40px;
+      font-size: 36px;
+      margin-bottom: 70px;
+      width: 33vw;
+    }
+  }
+  &__img-n-ix {
+    width: 90px;
+    height: 82px;
+    margin-top: 39px;
+    margin-bottom: 38px;
+  }
+  &__img-western {
+    width: 209px;
+    height: 99px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  &__img-dhl {
+    width: 204px;
+    height: 37px;
+    margin-top: 61px;
+    margin-bottom: 61px;
+  }
+  &__img-mac-paw {
+    width: 204px;
+    height: 41px;
+    margin-top: 59px;
+    margin-bottom: 59px;
+  }
+}

@@ -1,0 +1,82 @@
+@import "./variables.scss";
+@import "./common_components.scss";
+
+.footer {
+  background-color: rgba(5, 54, 252, 1);
+  position: relative;
+  &__wrapper {
+    display: grid;
+    row-gap: 70px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    padding: 368px 214px 62px 50px;
+    & p:nth-child(6) {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      color: #fff;
+      opacity: 0.35;
+      width: 31vw;
+    }
+  }
+  &__subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 15px;
+    opacity: 0.9;
+  }
+  &__logo {
+    width: 39.46px;
+    height: 57px;
+  }
+  &__title {
+    @extend %subtitle-template;
+    margin-bottom: 30px;
+    position: relative;
+    line-height: 24px;
+  }
+  &__link {
+    text-decoration: none;
+    display: block;
+    &:hover {
+      color: black;
+    }
+  }
+  &__img {
+    position: absolute;
+    top: -114px;
+  }
+  &__form-btn {
+    width: fit-content;
+  }
+}
+.about-us p:last-child {
+  margin-bottom: 0;
+}
+.subscribe .footer__subtitle {
+  opacity: 0.6;
+  width: 15vw;
+  margin-bottom: 70px;
+}
+.subscribe input {
+  outline: unset;
+  border: unset;
+  padding: 0;
+  padding-bottom: 5px;
+  width: 100%;
+  background-color: rgba(5, 54, 252, 1);
+  color: #fff;
+  opacity: 0.35;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  width: 277px;
+  margin-bottom: 30px;
+  &::placeholder {
+    color: #fff;
+    opacity: 0.6;
+  }
+}
+.social {
+  margin-top: 30px;
+  &__img--margin {
+    margin-left: 25px;
+    margin-right: 24px;
+  }
+}

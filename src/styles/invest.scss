@@ -1,0 +1,44 @@
+@import "./variables.scss";
+@import "./common_components.scss";
+
+.invest {
+  background-image: url(../images/invest-img.png);
+  height: 960px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  &__wrapper {
+    padding-top: 120px;
+    padding-left: 211px;
+    width: 47vw;
+    height: 34.8vw;
+    background-color: #fff;
+  }
+  &__title {
+    @extend %title-template;
+    @extend %title-h4;
+    margin-bottom: 100px;
+  }
+  &__subtitle {
+    @extend %subtitle-template;
+    margin-bottom: 30px;
+  }
+  &__container-btn {
+    margin-left: auto;
+    display: flex;
+  }
+  &__btn {
+    border: unset;
+    cursor: pointer;
+    padding: 0;
+    width: 90px;
+    height: 90px;
+  }
+  &__btn-left {
+    background-color: #fff;
+  }
+  &__btn-right {
+    background-color: #0536fc;
+  }
+}
