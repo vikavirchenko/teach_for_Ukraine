@@ -3,6 +3,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "dev": "parcel src/main.html",
+    "dev:about": "parcel src/about-us.html",
     "build": "parcel build",
     "h": "parcel help"
   },
