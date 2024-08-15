@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "npm run clear && parcel src/*.html",
     "dev:about": "npm run clear && parcel src/about_us.html",
-    "build": "parcel build src/*.html --no-minify",
+    "build": "parcel build src/index.html --no-minify",
     "clear": "rmdir .cache /s"
   },
   "devDependencies": {
