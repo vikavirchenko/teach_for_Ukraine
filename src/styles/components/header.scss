@@ -1,5 +1,5 @@
-@import "./variables.scss";
-@import "./common_components.scss";
+@import "../variables.scss";
+@import "./common.scss";
 
 .header__container {
   padding: 24px 50px;
@@ -47,6 +47,9 @@
       line-height: 24px;
       letter-spacing: -0.03em;
       text-align: left;
+    }
+    &-item {
+      cursor: pointer;
     }
   }
   &__support-link {

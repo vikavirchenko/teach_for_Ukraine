@@ -1,0 +1,202 @@
+@import "../../../variables.scss";
+@import "../../../components/common.scss";
+
+.who-are-we__wrapper {
+  position: relative;
+  padding-top: 150px;
+  padding-left: 210px;
+}
+.about-us .about-us__label {
+  background: white;
+  color: rgb(5, 54, 252);
+}
+.our-activity .btn {
+  background: rgb(5, 54, 252);
+  color: white;
+}
+.our-activity {
+  & .btn:hover {
+    background: rgb(5, 54, 252);
+  }
+}
+.who-are-we__wrapper .program-purpose__title {
+  width: 33vw;
+}
+.invest {
+  background: red !important;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 249px;
+  }
+  &__form {
+    width: 100%;
+    margin-top: 362px;
+    margin-left: 33px;
+  }
+}
+.program-purpose__subtitle--margin {
+  margin-bottom: 0;
+}
+.payment-section {
+  padding-bottom: 50px;
+  display: flex;
+}
+.input:checked ~ .checkbox-checkmark {
+  border: 1px solid #0536fc;
+}
+.checkbox-checkmark {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #00000026;
+  position: relative;
+}
+.input:checked ~ .checkbox-checkmark::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #0536fc;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.input {
+  display: none;
+}
+.input-payment {
+  margin: 0;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.checkbox-payment {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.payment {
+  opacity: 0.6;
+  margin-right: 30px;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-left: 15px;
+}
+.program-purpose__title--h3 {
+  margin-bottom: 87px;
+}
+.sum {
+  color: rgba(0, 0, 0, 1);
+  opacity: 1;
+  white-space: nowrap;
+  margin: auto;
+}
+.bank-card-checkmark {
+  display: flex;
+  width: 160px;
+  height: 50px;
+  flex-shrink: 0;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  fill: #fff;
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.15);
+  border-right: 0;
+  cursor: pointer;
+  //   width: 100%;
+}
+.bank-card-section {
+  display: flex;
+}
+.bank-card-input {
+  display: none;
+}
+.other_sum {
+  width: 100%;
+  padding-left: 35px;
+}
+.other_sum {
+  padding-left: 35px;
+  display: flex;
+  width: 640px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-top: 0;
+  margin-bottom: 20px;
+  outline: unset;
+}
+.last-checkmark {
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+.bank-card-checkbox {
+  display: flex;
+}
+.bank-card-input:checked ~ .bank-card-checkmark {
+  background: #0536fc;
+}
+.bank-card-input:checked ~ .bank-card-checkmark .sum {
+  color: white;
+}
+.payment-type-section {
+  display: flex;
+  padding-bottom: 50px;
+}
+.form {
+  display: block;
+}
+.personal-data {
+  margin-bottom: 30px;
+  width: 31.2vw;
+}
+.consent-section {
+  display: grid;
+  margin-bottom: 48px;
+}
+.consent-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.consent-checkbox-input {
+  display: none;
+}
+.consent-checkmark {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  display: flex;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.consent-checkbox-input:checked ~ .consent-checkmark > .check-mark {
+  display: flex;
+}
+.check-mark {
+  stroke-width: 0.7px;
+  stroke: #0536fc;
+  width: 10px;
+  height: 7px;
+  flex-shrink: 0;
+  margin: auto;
+  display: none;
+}
+.link-text {
+  text-decoration: none;
+  opacity: 1;
+  color: #0536fc;
+}
+.consent-checkbox-span {
+  margin-right: 8px;
+}
+.nav__partners-link--check {
+  color: #0536fc;
+}
+.nav__partners-link--check-mark {
+  border-color: #0536fc;
+}

@@ -1,5 +1,5 @@
-@import "./variables.scss";
-@import "./common_components.scss";
+@import "../../../variables.scss";
+@import "../../../components/common.scss";
 
 .technology {
   display: grid;
@@ -54,10 +54,18 @@
         top: 0;
       }
     }
-  }
-  &__preparation {
-    background-color: #0536fc;
-    position: relative;
+    &:hover {
+      background: rgba(5, 54, 252, 1);
+    }
+    &:hover .number {
+      color: white;
+    }
+    &:hover .technology__text--width {
+      color: white;
+    }
+    &:hover .technology__subtitle {
+      color: white;
+    }
   }
   &__text--width {
     width: 13vw;

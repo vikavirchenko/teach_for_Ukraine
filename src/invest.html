@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/pages/main/index.scss" />
+    <link rel="stylesheet" href="./styles/pages/about_us/index.scss" />
+    <link rel="stylesheet" href="./styles/pages/partners/index.scss" />
+    <link rel="stylesheet" href="./styles/pages/invest/index.scss" />
+    <title>Програма змін у країні</title>
+</head>
+
+<body>
+    <header class="header__container">
+        <nav class="nav">
+            <div class="nav__logo">
+                <img src="./images/logo.png" class="nav__logo-img" />
+                <p class="nav__logo-text nav--font">Програма для змін у країні</p>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <a class="nav__schools-link nav--font nav__list-item--text-style" href="#">школам</a><i
+                        class="down-arrow"></i>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav__partners-link nav--font nav__list-item--text-style nav__partners-link--check"
+                        href="#">партнерам</a><i class="down-arrow nav__partners-link--check-mark"></i>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav__about-us-link nav--font nav__list-item--text-style" href="#">про нас</a><i
+                        class="down-arrow"></i>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav__stories-link nav--font nav__list-item--text-style" href="#">історії</a><i
+                        class="down-arrow"></i>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav__support-link nav--font nav__list-item--text-style" href="#">підтримка</a><i
+                        class="down-arrow"></i>
+                </li>
+                <li class="lang-wrapper">
+                    <div class="dropdown">
+                        <input class="lang-btn" type="checkbox" id="my-dropdown" name="my-checkbox" />
+                        <label class="lang-filters nav--font font-color nav__list-item--text-style" for="my-dropdown">
+                            укр
+                            <i class="down-arrow down-arrow--color"></i>
+                        </label>
+                        <div class="lang-picker-holder">
+                            <ul class="lang-picker">
+                                <li class="lang-picker-item">
+                                    <a href="#" class="lang-picker-link nav--font nav__list-item--text-style">англ</a>
+                                </li>
+                                <li class="lang-picker-item">
+                                    <a href="#" class="lang-picker-link nav--font nav__list-item--text-style">укр</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="program-purpose__wrapper1">
+            <p class="program-purpose__subtitle">партнерам</p>
+            <h2 class="program-purpose__title program-purpose__title--h2">
+                залучись <br>
+                — будь нашим <br> партнером
+            </h2>
+            <p class="text program-purpose__wrapper1--margin-text">
+                Будь спонсором, зроби зміни в країні можливими.
+            </p>
+        </div>
+        <a href="#"><img src="./svg/down-arrow.svg" class="program-purpose__svg" /></a>
+    </section>
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <main class="about-us__main">
+        <div class="about-us__wrapper-btn">
+            <div class="about-us">
+                <a href="./partners.html" class="about-us__btn about-us__label btn">партнерам</a>
+            </div>
+            <div class="our-activity">
+                <a href="./invest.html" class="about-us__btn our-activity__label btn">інвестувати</a>
+            </div>
+    </main>
+    <section class="invest__container">
+        <div class="who-are-we__wrapper">
+            <p class="program-purpose__subtitle">інвестиції</p>
+            <h3 class="program-purpose__title program-purpose__title--h3">
+                зробити <br> — інвестиції у програму
+            </h3>
+            <p class="program-purpose__subtitle subtitle--black program-purpose__subtitle--margin">виберіть спосіб
+                оплати</p>
+        </div>
+        <form class="invest__form">
+            <div class="payment-section">
+                <label class="checkbox-payment">
+                    <input class="input-payment input" type="radio" name="payment_method" value="Банківська карта"
+                        checked="">
+                    <span class="checkbox-checkmark"></span>
+                    <span class="text payment">Банківська карта</span></label>
+                <label class="checkbox-payment">
+                    <input class="input-payment input" type="radio" name="payment_method" value="PayPal">
+                    <span class="checkbox-checkmark"></span>
+                    <span class="text payment">PayPal</span></label>
+                <label class="checkbox-payment">
+                    <input class="input-payment input" type="radio" name="payment_method"
+                        value="Банківська платіжна квитанція">
+                    <span class="checkbox-checkmark"></span>
+                    <span class="text payment">Банківська платіжна квитанція</span></label>
+            </div>
+            <div class="sum-holder">
+                <fieldset class="bank-card-section">
+                    <legend class="program-purpose__subtitle subtitle--black">
+                        банківська карта
+                    </legend>
+                    <label class="label-text bank-card-checkbox"><input class="bank-card-input" type="radio" name="sum"
+                            checked value="50000">
+                        <span class="bank-card-checkmark"><span class="sum text"> 50 000 </span></span>
+                    </label>
+
+                    <label class="label-text bank-card-checkbox">
+                        <input class="bank-card-input" type="radio" name="sum" value="30000"><span
+                            class="bank-card-checkmark"><span class="sum text">30 000 </span></span>
+                    </label>
+
+                    <label class="label-text bank-card-checkbox"><input class="bank-card-input" type="radio" name="sum"
+                            value="10000"><span class="bank-card-checkmark"><span class="sum text">10 000</span></span>
+                    </label>
+
+                    <label class="label-text bank-card-checkbox"><input class="bank-card-input" type="radio" name="sum"
+                            value="1000"><span class="bank-card-checkmark last-checkmark"><span class="sum text">1
+                                000</span></span>
+                    </label>
+                </fieldset>
+
+                <label class="other_sum-div">
+                    <input class="label-text other_sum nav__logo-text nav--font" type="text" name="other_sum"
+                        placeholder="Інша сумма">
+                </label>
+            </div>
+            <div class="payment-type-section">
+                <label class="checkbox-payment"><input class="input-monthly input" type="radio" name="payment_type"
+                        checked=""><span class="checkbox-checkmark"></span><span
+                        class="label-text payment text">Щомісячно</span></label>
+
+                <label class="checkbox-payment"><input class="input-monthly input" type="radio"
+                        name="payment_type"><span class="checkbox-checkmark"></span><span
+                        class="label-text payment text">Одноразово</span></label>
+            </div>
+            <div class="form">
+                <fieldset class="personal-data">
+                    <legend class="support__subtitle subtitle--black">ім’я</legend>
+                    <input class="nav__logo-text nav--font" type="text" name="name" placeholder="Напишіть ваше ім’я">
+                </fieldset>
+                <fieldset class="personal-data">
+                    <legend class="support__subtitle subtitle--black">Email</legend>
+                    <input class="nav__logo-text nav--font" type="email" name="email"
+                        placeholder="Напишіть вашу електронну адресу">
+                </fieldset>
+            </div>
+            <div class="consent-section">
+                <label class="label-text consent-checkbox">
+                    <input class="consent-checkbox-input" type="checkbox" name="consent" required>
+                    <span class="consent-checkmark"><img class="check-mark" src="./svg/check_mark.svg"></span>
+                    <span class="consent-checkbox-span text">Я приймаю</span>
+                    <a href="#" class="label-text link-text text">Договір оферти</a></label>
+
+                <label class="label-text consent-checkbox consent-checkbox-bottom"><input class="consent-checkbox-input"
+                        consent-checkbox-input="" type="checkbox" name="consent" required>
+                    <span class="consent-checkmark">
+                        <img class="check-mark" src="./svg/check_mark.svg">
+                    </span>
+                    <span class="consent-checkbox-span text">Я приймаю</span>
+
+                    <a href="#" class="label-text link-text text">Угоду про використання персональних даних</a>
+                </label>
+            </div>
+            <button type="submit" class="btn">відправити</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <img class="footer__img" src="./images/footer-img.png" />
+        <div class="footer__wrapper">
+            <img src="./images/logo-white.png" class="footer__logo" />
+            <div class="footer__about-us">
+                <p class="footer__title subtitle--white">про нас</p>
+                <a href="#" class="text footer__subtitle footer__link">Наша діяльність</a>
+                <a href="#" class="text footer__subtitle footer__link">Наші цінності</a>
+                <a href="#" class="text footer__subtitle footer__link">Наша програма</a>
+            </div>
+            <div class="footer__program">
+                <p class="footer__title subtitle--white">програма</p>
+                <a href="#" class="text footer__subtitle footer__link">Школи-партнери</a>
+                <a href="#" class="text footer__subtitle footer__link">Учасники-вчителі</a>
+                <a href="#" class="text footer__subtitle footer__link">Партнери-спонсори</a>
+            </div>
+            <div class="footer__community">
+                <p class="footer__title subtitle--white">Спільнота</p>
+                <a href="#" class="text footer__subtitle footer__link">Команда</a>
+                <a href="#" class="text footer__subtitle footer__link">Кар’єра</a>
+                <a href="#" class="text footer__subtitle footer__link">Випускники</a>
+            </div>
+            <div class="footer__subscribe">
+                <p class="footer__title subtitle--white">підпишись</p>
+                <p class="text footer__subtitle">
+                    Підпишись до нашої спільноти та отримуй листи із новинами,
+                    пропозиціями та запрошеннями до колективних зібрань.
+                </p>
+                <form class="footer__form">
+                    <input class="nav__logo-text nav--font" type="email" name="email"
+                        placeholder="Напишіть свою електронну адресу" />
+                    <a href="#" class="btn footer__form-btn">— відправити</a>
+                </form>
+            </div>
+            <p class="text footer__subtitle">
+                «Навчай для України» — партнер міжнародної мережі Teach For All ©
+                Громадська організація «Навчай для України»
+            </p>
+            <div class="footer__social">
+                <p class="footer__title subtitle--white">слідкуй за нами</p>
+                <div class="social__img">
+                    <a href="#"><img src="./svg/insta.svg" /></a>
+                    <a href="#" class="footer__social__img--margin"><img src="./svg/facebook.svg" /></a>
+                    <a href="#"><img src="./svg/youtube.svg" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

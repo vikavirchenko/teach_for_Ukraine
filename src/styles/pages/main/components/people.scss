@@ -1,5 +1,5 @@
-@import "./common_components.scss";
-@import "./variables.scss";
+@import "../../../variables.scss";
+@import "../../../components/common.scss";
 
 .people {
   display: grid;
@@ -31,30 +31,35 @@
     width: 12vw;
   }
   &__img1 {
-    background-image: url(../images/people-top.png);
+    background-image: url(/images/people-top.png);
   }
   &__img2 {
-    background-image: url(../images/people-left.png);
+    background-image: url(/images/people-left.png);
   }
   &__img3 {
-    background-image: url(../images/people-right.png);
+    background-image: url(/images/people-right.png);
   }
   &__img--style {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  &__participants {
-    background-color: #0536fc;
-    position: relative;
-  }
-  &__school {
-    padding: 94px 125px 36px 50px;
-    position: relative;
-  }
   &-container {
     padding-top: 50px;
     padding-left: 50px;
     padding-bottom: 36px;
+    position: relative;
+    &:hover {
+      background: rgba(5, 54, 252, 1);
+    }
+    &:hover .number {
+      color: white;
+    }
+    &:hover .people__subtitle {
+      color: white;
+    }
+    &:hover .people__text--width {
+      color: white;
+    }
   }
   &__partners {
     position: relative;

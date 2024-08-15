@@ -1,9 +1,9 @@
-@import "./variables.scss";
-@import "./common_components.scss";
+@import "../../../variables.scss";
+@import "../../../components/common.scss";
 
 .partners {
   & .nav__logo-text {
-    width: 17vw;
+    width: 19vw;
     padding-bottom: 100px;
   }
   &__top {
@@ -11,28 +11,37 @@
   }
   &__bottom {
     display: flex;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    & div:nth-child(3)::after {
-      content: "";
-      height: 453px;
-      width: 1px;
-      border: 1px solid rgba(0, 0, 0, 0.15);
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
+    flex-wrap: wrap;
     &-container {
       width: 25%;
       position: relative;
       padding-left: 50px;
-      & .nav__logo-text {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      border-right: 1px solid rgba(0, 0, 0, 0.15);
+
+      &:hover .nav__logo-text {
         color: rgba(255, 255, 255, 1);
         opacity: 0.6;
       }
-    }
-    & div:nth-child(2) {
-      background-color: #0536fc;
+      &:hover {
+        background-color: #0536fc;
+      }
+      &:hover .arrow-wrapper {
+        display: block;
+      }
+      &:hover .partners__subtitle {
+        color: white;
+      }
+      & .description {
+        width: 17vw;
+        visibility: hidden;
+      }
+      &:hover .description {
+        visibility: visible;
+      }
+      & .arrow-wrapper {
+        display: none;
+      }
     }
   }
   &__subtitle {
@@ -75,6 +84,12 @@
     width: 204px;
     height: 41px;
     margin-top: 59px;
+    margin-bottom: 59px;
+  }
+  &__img-softserve {
+    width: 186px;
+    height: 38px;
+    margin-top: 61px;
     margin-bottom: 59px;
   }
 }

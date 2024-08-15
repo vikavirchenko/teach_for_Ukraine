@@ -3,38 +3,38 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("./fonts/BasisGrotesquePro-Bold.eot");
-  src: url("./fonts/BasisGrotesquePro-Bold.woff") format("woff"),
-    url("./fonts/BasisGrotesquePro-Bold.ttf") format("ttf"),
-    url("./fonts/BasisGrotesquePro-Bold.woff2") format("woff2");
+  src: url("/fonts/BasisGrotesquePro-Bold.eot");
+  src: url("/fonts/BasisGrotesquePro-Bold.woff") format("woff"),
+    url("/fonts/BasisGrotesquePro-Bold.ttf") format("ttf"),
+    url("/fonts/BasisGrotesquePro-Bold.woff2") format("woff2");
 }
 @font-face {
   font-family: "Basis";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("./fonts/BasisGrotesquePro-Light.eot");
-  src: url("./fonts/BasisGrotesquePro-Light.woff") format("woff"),
-    url("./fonts/BasisGrotesquePro-Light.ttf") format("ttf"),
-    url("./fonts/BasisGrotesquePro-Light.woff2") format("woff2");
+  src: url("/fonts/BasisGrotesquePro-Light.eot");
+  src: url("/fonts/BasisGrotesquePro-Light.woff") format("woff"),
+    url("/fonts/BasisGrotesquePro-Light.ttf") format("ttf"),
+    url("/fonts/BasisGrotesquePro-Light.woff2") format("woff2");
 }
 @font-face {
   font-family: "Basis";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("./fonts/BasisGrotesquePro-Medium.eot");
-  src: url("./fonts/BasisGrotesquePro-Medium.woff") format("woff"),
-    url("./fonts/BasisGrotesquePro-Medium.ttf") format("ttf"),
-    url("./fonts/BasisGrotesquePro-Medium.woff2") format("woff2");
+  src: url("/fonts/BasisGrotesquePro-Medium.eot");
+  src: url("/fonts/BasisGrotesquePro-Medium.woff") format("woff"),
+    url("/fonts/BasisGrotesquePro-Medium.ttf") format("ttf"),
+    url("/fonts/BasisGrotesquePro-Medium.woff2") format("woff2");
 }
 @font-face {
   font-family: "Basis";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("./fonts/BasisGrotesquePro-Regular.eot");
-  src: url("./fonts/BasisGrotesquePro-Regular.woff") format("woff"),
-    url("./fonts/BasisGrotesquePro-Regular.ttf") format("ttf"),
-    url("./fonts/BasisGrotesquePro-Regular.woff2") format("woff2");
+  src: url("/fonts/BasisGrotesquePro-Regular.eot");
+  src: url("/fonts/BasisGrotesquePro-Regular.woff") format("woff"),
+    url("/fonts/BasisGrotesquePro-Regular.ttf") format("ttf"),
+    url("/fonts/BasisGrotesquePro-Regular.woff2") format("woff2");
 }

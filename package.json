@@ -2,10 +2,10 @@
   "name": "my-project",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "dev": "parcel src/main.html",
-    "dev:about": "parcel src/about-us.html",
+    "dev": "npm run clear && parcel src/*.html",
+    "dev:about": "npm run clear && parcel src/about_us.html",
     "build": "parcel build",
-    "h": "parcel help"
+    "clear": "rmdir .cache /s"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",

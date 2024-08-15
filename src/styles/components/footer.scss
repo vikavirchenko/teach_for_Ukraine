@@ -1,5 +1,5 @@
-@import "./variables.scss";
-@import "./common_components.scss";
+@import "../variables.scss";
+@import "./common.scss";
 
 .footer {
   background-color: rgba(5, 54, 252, 1);
@@ -44,39 +44,43 @@
     position: absolute;
     top: -114px;
   }
-  &__form-btn {
+  &__form .footer__form-btn {
     width: fit-content;
+    &:hover {
+      color: black;
+      background: unset;
+    }
   }
-}
-.about-us p:last-child {
-  margin-bottom: 0;
-}
-.subscribe .footer__subtitle {
-  opacity: 0.6;
-  width: 15vw;
-  margin-bottom: 70px;
-}
-.subscribe input {
-  outline: unset;
-  border: unset;
-  padding: 0;
-  padding-bottom: 5px;
-  width: 100%;
-  background-color: rgba(5, 54, 252, 1);
-  color: #fff;
-  opacity: 0.35;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
-  width: 277px;
-  margin-bottom: 30px;
-  &::placeholder {
-    color: #fff;
+  &__about-us p:last-child {
+    margin-bottom: 0;
+  }
+  &__subscribe .footer__subtitle {
     opacity: 0.6;
+    width: 15vw;
+    margin-bottom: 70px;
   }
-}
-.social {
-  margin-top: 30px;
-  &__img--margin {
-    margin-left: 25px;
-    margin-right: 24px;
+  &__subscribe input {
+    outline: unset;
+    border: unset;
+    padding: 0;
+    padding-bottom: 5px;
+    width: 100%;
+    background-color: rgba(5, 54, 252, 1);
+    color: #fff;
+    opacity: 0.35;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    width: 277px;
+    margin-bottom: 30px;
+    &::placeholder {
+      color: #fff;
+      opacity: 0.6;
+    }
+  }
+  &__social {
+    margin-top: 30px;
+    &__img--margin {
+      margin-left: 25px;
+      margin-right: 24px;
+    }
   }
 }

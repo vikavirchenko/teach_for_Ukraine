@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import "../variables.scss";
 
 // --------------------------------subtitle
 %subtitle-template {
@@ -80,9 +80,9 @@
   }
 }
 // ----------------------------------square
-.square {
+.square-right {
   position: relative;
-  &::before {
+  &::after {
     position: absolute;
     display: block;
     top: 36px;
@@ -93,13 +93,27 @@
     content: "";
     transform: rotate(45deg);
   }
-
   &.square--blue {
     &::before {
       background: rgba(5, 54, 252, 1);
     }
   }
 }
+.square-left {
+  position: relative;
+  &::before {
+    position: absolute;
+    display: block;
+    top: 36px;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    background: white;
+    content: "";
+    transform: rotate(45deg);
+  }
+}
+
 // ------------------------------------------number
 .number {
   font-family: $font-Basis;
@@ -155,4 +169,11 @@
   text-align: left;
   color: #ff8201;
   margin-right: 35px;
+}
+.shared-container {
+  // padding: 94px 125px 36px 50px;
+  padding-top: 94px;
+  padding-bottom: 125px;
+  padding-left: 50px;
+  position: relative;
 }
