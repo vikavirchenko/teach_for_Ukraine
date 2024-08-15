@@ -4,12 +4,14 @@
   "scripts": {
     "dev": "npm run clear && parcel src/*.html",
     "dev:about": "npm run clear && parcel src/about_us.html",
-    "build": "parcel build",
+    "build": "parcel build src/*.html --no-minify",
     "clear": "rmdir .cache /s"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",
+    "cssnano": "^7.0.5",
     "parcel": "^2.12.0",
-    "parcel-bundler": "^1.12.5"
+    "parcel-bundler": "^1.12.5",
+    "postcss": "^8.4.41"
   }
 }
